@@ -5,6 +5,7 @@ export interface PermissionOptions {
   net?: boolean | Array<string>;
   read?: boolean | Array<string>;
   run?: boolean;
+  watch?: boolean;
   write?: boolean | Array<string>;
 }
 
@@ -15,5 +16,6 @@ export enum PermissionFlag {
   AllowNet = "--allow-net",
   AllowRead = "--allow-read",
   AllowRun = "--allow-run",
+  AllowWatch = "--watch",
   AllowWrite = "--allow-write",
 }
