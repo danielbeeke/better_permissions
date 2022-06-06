@@ -44,7 +44,7 @@ export function generatePermisions(
       let readFlag = generateArrayPermissionFlag(
         PermissionFlag.AllowRead,
         options.read,
-        generatePathsString,
+        generateUrlsString,
       );
       result.push(readFlag);
     }
@@ -53,7 +53,7 @@ export function generatePermisions(
       let writeFlag = generateArrayPermissionFlag(
         PermissionFlag.AllowWrite,
         options.write,
-        generatePathsString,
+        generateUrlsString,
       );
       result.push(writeFlag);
     }
