@@ -39,6 +39,10 @@ export function generatePermisions(
     if (options.run) {
       result.push(PermissionFlag.AllowRun);
     }
+    
+    if (options.watch) {
+      result.push(PermissionFlag.AllowWatch);
+    }
 
     if (options.read) {
       let readFlag = generateArrayPermissionFlag(
